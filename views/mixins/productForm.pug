@@ -1,0 +1,9 @@
+mixin productForm(product, categories, saveUrl, cancelUrl)
+
+    div.form-container
+        form(action=saveUrl method='post')
+            div.form-input
+                label(for="product_name") Product Name
+                input(type="text" id="product_name" name="product_name" value=product.product_name)
+
+            div.form-input

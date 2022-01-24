@@ -5,3 +5,5 @@ mixin reviewPanel(review)
         div Rating: #{review.rating}
         div=review.subject
         p=review.description
+        div
+            a(href=`/reviews/edit/${review.id}`) Edit review

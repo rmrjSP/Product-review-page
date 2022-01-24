@@ -17,4 +17,5 @@ router.get('/products/delete/:id', productController.deleteProduct);
 router.get('/products/:productId/review/add', reviewController.renderAddReviewForm);
 router.post('/products/:productId/review/add', reviewController.addReview);
 router.get('/reviews/edit/:id', reviewController.renderEditReviewForm);
+router.post('/reviews/edit/:id', reviewController.updateReview);
 module.exports = router;

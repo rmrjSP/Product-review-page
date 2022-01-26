@@ -32,7 +32,7 @@ module.exports.updateProduct = async function(req,res) {
 
 module.exports.viewProducts = async function(req, res) {
     const products = await Product.findAll({
-        include:'review'
+        include:'reviews'
     });
     res.render('index', {products})
 }

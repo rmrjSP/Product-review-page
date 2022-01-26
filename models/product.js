@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         }
         let total = 0;
         for (let i=0; i<reviewCount; i++){
-          total+= this.review[i].rating;
+          total+= this.reviews[i].rating;
         }
         return total/reviewCount;
       }
